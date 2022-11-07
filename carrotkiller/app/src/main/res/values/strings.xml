@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Interaction</string>
+    <string name="button">Button</string>
+    <string name="imagen">Image</string>
+</resources>
