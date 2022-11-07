@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
+    android:theme="@style/Theme.Carrot"
     tools:context=".LoginActivity">
 
 
@@ -15,7 +15,6 @@
             android:layout_margin="50dp"
             android:gravity="center"
             android:text="Sign in"
-            android:textColor="@color/white"
             android:textSize="35dp"
             android:textStyle="bold" />
 
