@@ -24,5 +24,6 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@color/orange</item>
         <item name="android:editTextBackground">@color/light_orange</item>
+        <item name="android:editTextColor">@color/white</item>
     </style>
 </resources>

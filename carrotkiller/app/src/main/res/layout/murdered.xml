@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Carrot"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/murderedText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/have_you_been_murdered"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/codeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/murderedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/introduce_the_killer_s_code"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:autofillHints="0000"
+        android:inputType="number"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:textSize="35sp"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/exec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:padding="20sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="EXECUTE"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/backMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Back to menu"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

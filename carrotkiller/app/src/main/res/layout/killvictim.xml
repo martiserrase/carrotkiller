@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Carrot"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/killerText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Did you killed your victim?"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        android:textSize="35sp"
+        android:background="@color/light_orange"
+        android:layout_below="@+id/killerText"
+        android:layout_centerHorizontal="true"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/backMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Back to menu"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

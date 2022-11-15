@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Carrot"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="223dp"
+        android:layout_height="203dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:src="@drawable/carrot_killer_icon" />
+
+    <TextView
+        android:id="@+id/slayed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="You have been slayed"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slayed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Your final score is:"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:autofillHints="0000"
+        android:inputType="number"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/backMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Back to menu"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

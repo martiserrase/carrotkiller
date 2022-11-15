@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(username.getText().toString().equals("pruebauser") && password.getText().toString().equals("pruebapass")) {
                     //correct
                     Toast.makeText(LoginActivity.this, "SUCESSFULLY LOGGED", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(view.getContext(), MainActivity.class);
+                    Intent intent = new Intent(view.getContext(), ProfileActivity.class);
                     startActivityForResult(intent, 0);
                 } else {
                     //fail

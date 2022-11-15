@@ -2,4 +2,6 @@
     <string name="app_name">Interaction</string>
     <string name="button">Button</string>
     <string name="imagen">Image</string>
+    <string name="have_you_been_murdered">Have you been murdered?</string>
+    <string name="introduce_the_killer_s_code">Introduce the killer\'s code:</string>
 </resources>
