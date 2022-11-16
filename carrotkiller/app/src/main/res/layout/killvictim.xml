@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.Carrot"
+    android:theme="@style/Carrot"
     tools:context=".LoginActivity">
 
 
@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:gravity="center"
-        android:text="Did you killed your victim?"
+        android:text="@string/did_you_killed_your_victim"
         android:textSize="35sp"
         android:textStyle="bold" />
 
@@ -22,13 +22,14 @@
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="30dp"
-        android:textSize="35sp"
-        android:background="@color/light_orange"
         android:layout_below="@+id/killerText"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:text="@string/code_number"
+        android:background="@color/light_orange"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:textSize="35sp"
         tools:ignore="LabelFor" />
 
     <Button
@@ -40,8 +41,9 @@
         android:layout_marginBottom="30sp"
         android:backgroundTint="@color/white"
         android:gravity="center"
-        android:text="Back to menu"
+        android:text="@string/back_to_menu"
         android:textColor="@color/black"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        tools:ignore="TextContrastCheck" />
 
 </RelativeLayout>

@@ -4,4 +4,26 @@
     <string name="imagen">Image</string>
     <string name="have_you_been_murdered">Have you been murdered?</string>
     <string name="introduce_the_killer_s_code">Introduce the killer\'s code:</string>
+    <string name="you_have_been_slayed">You have been slayed</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="your_final_score_is">Your final score is:</string>
+    <string name="todo">TODO</string>
+    <string name="this_code_not_valid_try_again">This code not valid. Try again</string>
+    <string name="victim_s_profile">Victim\'s Profile</string>
+    <string name="information">Information</string>
+    <string name="kill">Kill</string>
+    <string name="sign_in">Sign in</string>
+    <string name="did_you_killed_your_victim">Did you killed your victim?</string>
+    <string name="execute">EXECUTE</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_information">Change information</string>
+    <string name="log_in">Log in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="register">Register</string>
+    <string name="code_number">XXXX</string>
+    <string name="email">Email</string>
+    <string name="repeat_password">Repeat password</string>
 </resources>

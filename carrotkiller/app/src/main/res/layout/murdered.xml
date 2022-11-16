@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.Carrot"
+    android:theme="@style/Carrot"
     tools:context=".LoginActivity">
 
 
@@ -27,48 +27,50 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="@string/introduce_the_killer_s_code"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        tools:ignore="TextContrastCheck" />
 
-    <EditText
+    <TextView
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/codeText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5sp"
+        android:text="@string/code_number"
         android:autofillHints="0000"
-        android:inputType="number"
         android:paddingHorizontal="30dp"
         android:paddingVertical="10dp"
         android:textSize="35sp"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/exec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/code"
-        android:padding="20sp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30sp"
         android:backgroundTint="@color/white"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:textStyle="bold"
-        android:text="EXECUTE"
+        android:padding="20sp"
+        android:text="@string/execute"
         android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/backMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="30sp"
         android:backgroundTint="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:text="Back to menu"
+        android:text="@string/back_to_menu"
         android:textColor="@color/black"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        tools:ignore="TextContrastCheck" />
 
 </RelativeLayout>

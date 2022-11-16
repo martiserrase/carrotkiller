@@ -15,9 +15,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.dead);
 
-        TextView username = (TextView) findViewById(R.id.username);
+        /*TextView username = (TextView) findViewById(R.id.username);
         TextView password = (TextView) findViewById(R.id.password);
 
         Button login = (Button) findViewById(R.id.login_button);
@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "THE USERNAME/PASSWORD IS NOT CORRECT", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });*/
         /*
         forgotPass.setOnClickListener(new View.OnClickListener() {
             @Override
