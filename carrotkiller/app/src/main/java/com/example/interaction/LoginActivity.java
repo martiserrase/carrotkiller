@@ -10,36 +10,44 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
-    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dead);
+        setContentView(R.layout.login);
 
-        /*TextView username = (TextView) findViewById(R.id.username);
+        TextView username = (TextView) findViewById(R.id.username);
         TextView password = (TextView) findViewById(R.id.password);
 
         Button login = (Button) findViewById(R.id.login_button);
+        Button register = (Button) findViewById(R.id.register_button);
 
         //TextView forgotPass = (TextView) findViewById(R.id.forgotpass);
 
-        //pruebauser y pruebapass
+        //user y user
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Habría que buscar en la base de datos el username y después que ese nombre coincida con la contraseña guardada
-                if(username.getText().toString().equals("pruebauser") && password.getText().toString().equals("pruebapass")) {
+                if(username.getText().toString().equals("user") && password.getText().toString().equals("user")) {
                     //correct
                     Toast.makeText(LoginActivity.this, "SUCESSFULLY LOGGED", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(view.getContext(), ProfileActivity.class);
-                    startActivityForResult(intent, 0);
+                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                    startActivity(intent);
                 } else {
                     //fail
                     Toast.makeText(LoginActivity.this, "THE USERNAME/PASSWORD IS NOT CORRECT", Toast.LENGTH_SHORT).show();
                 }
             }
-        });*/
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent2);
+            }
+        });
         /*
         forgotPass.setOnClickListener(new View.OnClickListener() {
             @Override
