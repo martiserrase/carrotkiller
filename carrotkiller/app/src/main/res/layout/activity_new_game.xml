@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewGame">
+    tools:context=".NewGame"
+    android:theme="@style/Carrot">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/game_name"
         android:layout_width="305dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -19,9 +20,9 @@
         app:layout_constraintVertical_bias="0.27" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="89dp"
-        android:layout_height="26dp"
+        android:id="@+id/game_name_title"
+        android:layout_width="91dp"
+        android:layout_height="25dp"
         android:text="GAME Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,20 +31,22 @@
         app:layout_constraintVertical_bias="0.211" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#4CAF50"
         android:text="Submit!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.941"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"/>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/create_game_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create new Carrot Killer game"
@@ -57,7 +60,7 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/initial_hour"
         android:layout_width="160dp"
         android:layout_height="26dp"
         android:ems="10"
@@ -70,7 +73,7 @@
         app:layout_constraintVertical_bias="0.529" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/date_example1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
@@ -83,7 +86,7 @@
         app:layout_constraintVertical_bias="0.435" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/hour_example1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
@@ -96,7 +99,7 @@
         app:layout_constraintVertical_bias="0.528" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/data_example2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
@@ -109,9 +112,9 @@
         app:layout_constraintVertical_bias="0.688" />
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="66dp"
-        android:layout_height="23dp"
+        android:id="@+id/final_date_title"
+        android:layout_width="82dp"
+        android:layout_height="20dp"
         android:text="Final date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,7 +124,7 @@
         app:layout_constraintVertical_bias="0.608" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/hour_example2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
@@ -134,9 +137,9 @@
         app:layout_constraintVertical_bias="0.781" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="66dp"
-        android:layout_height="23dp"
+        android:id="@+id/initial_date_title"
+        android:layout_width="87dp"
+        android:layout_height="21dp"
         android:text="Initial date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,7 +149,7 @@
         app:layout_constraintVertical_bias="0.37" />
 
     <EditText
-        android:id="@+id/editTextDate4"
+        android:id="@+id/final_date"
         android:layout_width="159dp"
         android:layout_height="27dp"
         android:ems="10"
@@ -159,7 +162,7 @@
         app:layout_constraintVertical_bias="0.693" />
 
     <EditText
-        android:id="@+id/editTextTime2"
+        android:id="@+id/final_hour"
         android:layout_width="160dp"
         android:layout_height="26dp"
         android:ems="10"
@@ -172,7 +175,7 @@
         app:layout_constraintVertical_bias="0.77" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/initial_date"
         android:layout_width="159dp"
         android:layout_height="27dp"
         android:ems="10"
@@ -185,10 +188,9 @@
         app:layout_constraintVertical_bias="0.453" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF5722"
         android:text="Cancel"
         app:iconTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -196,6 +198,9 @@
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.941"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,24 +8,27 @@
     android:theme="@style/Carrot">
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/new_victim"
         android:layout_width="234dp"
         android:layout_height="73dp"
-        android:backgroundTint="#FF5722"
         android:text="NEW VICTIM"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintVertical_bias="0.905"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white" />
 
-    <TextView
-        android:id="@+id/textView56"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GIF CELEBRANDO"
-        android:textSize="24sp"
+
+    <ImageView
+        android:id="@+id/celebration_photo"
+        android:layout_width="337dp"
+        android:layout_height="252dp"
+        android:contentDescription="Celebration Photo"
+        android:src="@drawable/celebration_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
@@ -33,8 +36,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.432" />
 
+
     <TextView
-        android:id="@+id/textView55"
+        android:id="@+id/nice_kill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NICE KILL"
@@ -47,7 +51,7 @@
         app:layout_constraintVertical_bias="0.201" />
 
     <TextView
-        android:id="@+id/textView53"
+        android:id="@+id/cograts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CONGRATS!!!"
@@ -61,28 +65,28 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <TextView
-        android:id="@+id/textView54"
+        android:id="@+id/current_kills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current kills"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <TextView
+        android:id="@+id/current_kills_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="XXX"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
-
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Number of kills"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
+        app:layout_constraintVertical_bias="0.732" />
 </androidx.constraintlayout.widget.ConstraintLayout>

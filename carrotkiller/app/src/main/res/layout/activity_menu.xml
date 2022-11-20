@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    tools:context=".Menu"
+    android:theme="@style/Carrot">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/menu_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MENU"
@@ -21,23 +22,25 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/my_profile_button"
         android:layout_width="197dp"
         android:layout_height="63dp"
-        android:backgroundTint="#03A9F4"
         android:text="my Profile"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.279" />
+        app:layout_constraintVertical_bias="0.279"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/new_game_button"
         android:layout_width="141dp"
         android:layout_height="84dp"
-        android:backgroundTint="#00BCD4"
+        android:backgroundTint="#03A9F4"
         android:text="new game"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +50,7 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/join_game_button"
         android:layout_width="141dp"
         android:layout_height="84dp"
         android:backgroundTint="#00BCD4"
@@ -60,16 +63,18 @@
         app:layout_constraintVertical_bias="0.693" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/continue_game_button"
         android:layout_width="234dp"
         android:layout_height="73dp"
-        android:backgroundTint="#3F51B5"
         android:text="continue game"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintVertical_bias="0.905"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

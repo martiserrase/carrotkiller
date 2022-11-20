@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotStartedGame">
+    tools:context=".NotStartedGame"
+    android:theme="@style/Carrot">
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/go_to_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF5722"
+        android:backgroundTint="@color/white"
         android:text="go to menu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:iconTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.935" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/carrot_killer_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Carrot Killer Game"
@@ -35,7 +37,7 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/not_began"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="hasn't began yet"
@@ -49,7 +51,7 @@
         app:layout_constraintVertical_bias="0.344" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/will_begin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="It will begin in"
@@ -63,7 +65,7 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/game_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NAME"
@@ -78,7 +80,7 @@
         app:layout_constraintVertical_bias="0.218" />
 
     <EditText
-        android:id="@+id/editTextTime3"
+        android:id="@+id/time_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -91,7 +93,7 @@
         app:layout_constraintVertical_bias="0.567" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/hours_minuts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="hours and minuts"

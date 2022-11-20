@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JoinGame">
+    tools:context=".JoinGame"
+    android:theme="@style/Carrot">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#4CAF50"
         android:text="Submit!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.941"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"/>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/cancel_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF5722"
         android:text="Cancel"
         app:iconTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,10 +33,13 @@
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.941"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/game_code"
         android:layout_width="305dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -47,22 +52,21 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="89dp"
-        android:layout_height="26dp"
+        android:id="@+id/text_game_code"
+        android:layout_width="93dp"
+        android:layout_height="39dp"
         android:text="GAME CODE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
+        app:layout_constraintVertical_bias="0.397" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/text_join"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Join Carrot Killer game"
+        android:text="Join a Carrot Killer game"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
