@@ -25,10 +25,10 @@
             android:id="@+id/photo"
             android:layout_width="100sp"
             android:layout_height="100sp"
-            android:src="@drawable/ic_baseline_image_24"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/myProfile"
-            android:contentDescription="@string/todo" />
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_image_24" />
 
         <TextView
             android:id="@+id/info"

@@ -37,6 +37,18 @@
             android:name=".VictimProfileActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".DeadActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MurderedActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".NotValidActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
