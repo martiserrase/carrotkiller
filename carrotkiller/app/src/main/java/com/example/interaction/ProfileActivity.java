@@ -1,17 +1,12 @@
 package com.example.interaction;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.google.android.material.navigation.NavigationBarItemView;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -26,9 +21,8 @@ public class ProfileActivity extends AppCompatActivity {
         backMenu_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ProfileActivity.this, "Iría a la ventana de MENU", Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(ProfileActivity.this, LoginActivity.class); // tendria que ir al menu
-                //startActivity(intent);
+                Intent intent = new Intent(ProfileActivity.this, StartedGameActivity.class);
+                startActivity(intent);
             }
         });
 

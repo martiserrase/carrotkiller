@@ -46,13 +46,13 @@ public class MenuActivity extends AppCompatActivity {
         });
 
 
-//        myProfile_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MenuActivity.this, MyProfileActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        myProfile_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this, ProfileActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }

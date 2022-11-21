@@ -25,9 +25,8 @@ public class MurderedActivity extends AppCompatActivity {
         backMenu_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MurderedActivity.this, "Iría a la ventana de MENU", Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(ProfileActivity.this, LoginActivity.class); // tendria que ir al menu
-                //startActivity(intent);
+                Intent intent = new Intent(MurderedActivity.this, StartedGameActivity.class);
+                startActivity(intent);
             }
         });
 

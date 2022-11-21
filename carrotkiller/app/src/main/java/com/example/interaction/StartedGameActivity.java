@@ -40,31 +40,31 @@ public class StartedGameActivity extends AppCompatActivity {
             }
         });
 
-//        newGame_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MenuActivity.this, NewGameActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        iveBeenKilled_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StartedGameActivity.this, MurderedActivity.class);
+                startActivity(intent);
 
-//        myProfile_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MenuActivity.this, StartedGameActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+            }
+        });
 
-//        newGame_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MenuActivity.this, NewGameActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        victimsProfile_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StartedGameActivity.this, VictimProfileActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        myProfile_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StartedGameActivity.this, ProfileActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }
