@@ -25,14 +25,13 @@ public class VictimProfileActivity extends AppCompatActivity {
             }
         });
 
-        Button button = findViewById(R.id.backMenu);
+        Button back_button = findViewById(R.id.backMenu);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(VictimProfileActivity.this, "Iría a la ventana de MENU", Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(VictimProfileActivity.this, LoginActivity.class); // tendria que ir al menu
-                //startActivity(intent);
+                Intent intent = new Intent(VictimProfileActivity.this, StartedGameActivity.class);
+                startActivity(intent);
             }
         });
     }
