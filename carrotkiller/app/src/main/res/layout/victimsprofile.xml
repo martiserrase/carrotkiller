@@ -44,6 +44,7 @@
             android:layout_marginBottom="20dp"
             android:background="@color/light_orange"
             android:gravity="center"
+            android:minHeight="48dp"
             android:text="@string/information"
             android:textSize="20sp"
             android:textStyle="bold"

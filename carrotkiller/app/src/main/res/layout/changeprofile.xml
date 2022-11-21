@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Carrot"
+    tools:context=".ChangeProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/myProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="30sp"
+            android:gravity="center"
+            android:text="@string/my_profile"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_below="@+id/myProfile"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <Button
+            android:id="@+id/change_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="50sp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/change_profile_photo"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/change_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/change_photo"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="80sp"
+            android:background="@color/light_orange"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="@string/information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor,TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/change_info">
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginEnd="30sp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="ButtonStyle,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30sp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="ButtonStyle,TextContrastCheck" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

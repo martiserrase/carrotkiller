@@ -8,7 +8,7 @@
     <string name="back_to_menu">Back to menu</string>
     <string name="your_final_score_is">Your final score is:</string>
     <string name="todo">TODO</string>
-    <string name="this_code_not_valid_try_again">This code not valid. Try again</string>
+    <string name="Code_not_valid_try_again">This code is not valid. Try again</string>
     <string name="victim_s_profile">Victim\'s Profile</string>
     <string name="information">Information</string>
     <string name="kill">Kill</string>
@@ -102,4 +102,9 @@
     <string name="it_will_begin_in">It will begin in</string>
     <string name="name_not_started">NAME</string>
     <string name="hours_and_minuts">hours and minuts</string>
+    <string name="back_to_victim_s_profile">Back to victim\'s profile</string>
+    <string name="try_another_code">Try another code</string>
+    <string name="change_profile_photo">Change profile photo</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 </resources>
