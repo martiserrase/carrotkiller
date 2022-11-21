@@ -192,7 +192,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        android:text="@string/cancel"
+        android:text="@string/cancel_new"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:iconTint="#FF5722"
