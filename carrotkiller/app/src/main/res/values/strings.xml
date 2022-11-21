@@ -28,4 +28,7 @@
     <string name="repeat_password">Repeat password</string>
     <string name="back_to_victim_s_profile">Back to victim\'s profile</string>
     <string name="try_another_code">Try another code</string>
+    <string name="change_profile_photo">Change profile photo</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 </resources>

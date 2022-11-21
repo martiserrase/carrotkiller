@@ -25,10 +25,10 @@
         android:layout_below="@+id/killerText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100sp"
-        android:text="@string/code_number"
         android:background="@color/light_orange"
         android:paddingHorizontal="30dp"
         android:paddingVertical="10dp"
+        android:text="@string/code_number"
         android:textSize="35sp"
         tools:ignore="LabelFor" />
 

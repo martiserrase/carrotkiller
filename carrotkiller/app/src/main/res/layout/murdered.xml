@@ -38,11 +38,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5sp"
         android:autofillHints="0000"
+        android:inputType="number"
         android:paddingHorizontal="30dp"
         android:paddingVertical="10dp"
         android:text="@string/code_number"
         android:textSize="35sp"
-        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/exec"

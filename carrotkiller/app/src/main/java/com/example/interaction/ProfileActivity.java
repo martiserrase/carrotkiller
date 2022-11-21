@@ -31,7 +31,8 @@ public class ProfileActivity extends AppCompatActivity {
         change_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ProfileActivity.this, "Iría a otra ventana para modificar la info????", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ProfileActivity.this, ChangeProfileActivity.class);
+                startActivity(intent);
             }
         });
 

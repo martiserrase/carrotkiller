@@ -15,38 +15,33 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        Toast.makeText(this, "prueba", Toast.LENGTH_SHORT).show();
 
-        TextView username = (TextView) findViewById(R.id.username);
-        TextView password = (TextView) findViewById(R.id.password);
+        TextView username = findViewById(R.id.username);
+        TextView password = findViewById(R.id.password);
 
-        Button login = (Button) findViewById(R.id.login_button);
-        Button register = (Button) findViewById(R.id.register_button);
+        Button login = findViewById(R.id.login_button);
+        Button register = findViewById(R.id.register_button);
 
         //TextView forgotPass = (TextView) findViewById(R.id.forgotpass);
 
         //user y user
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Habría que buscar en la base de datos el username y después que ese nombre coincida con la contraseña guardada
-                if(username.getText().toString().equals("user") && password.getText().toString().equals("user")) {
-                    //correct
-                    Toast.makeText(LoginActivity.this, "SUCESSFULLY LOGGED", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
-                    startActivity(intent);
-                } else {
-                    //fail
-                    Toast.makeText(LoginActivity.this, "THE USERNAME/PASSWORD IS NOT CORRECT", Toast.LENGTH_SHORT).show();
-                }
+        login.setOnClickListener(view -> {
+            // Habría que buscar en la base de datos el username y después que ese nombre coincida con la contraseña guardada
+            if(username.getText().toString().equals("user") && password.getText().toString().equals("user")) {
+                //correct
+                Toast.makeText(LoginActivity.this, "SUCESSFULLY LOGGED", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            } else {
+                //fail
+                Toast.makeText(LoginActivity.this, "THE USERNAME/PASSWORD IS NOT CORRECT", Toast.LENGTH_SHORT).show();
             }
         });
 
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
+        register.setOnClickListener(view -> {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
         /*
         forgotPass.setOnClickListener(new View.OnClickListener() {
