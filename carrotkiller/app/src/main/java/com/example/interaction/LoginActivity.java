@@ -15,7 +15,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        Toast.makeText(this, "prueba", Toast.LENGTH_SHORT).show();
 
         TextView username = findViewById(R.id.username);
         TextView password = findViewById(R.id.password);
