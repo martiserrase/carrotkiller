@@ -14,11 +14,7 @@
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".pruebaMain"
+            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +22,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".pruebaRegister"
+            android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
             android:exported="true">
         </activity>
         <activity
@@ -39,10 +39,6 @@
         </activity>
         <activity
             android:name=".StartedGameActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".MenuActivity"
             android:exported="true">
         </activity>
         <activity
@@ -67,10 +63,6 @@
         </activity>
         <activity
             android:name=".CongratsActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".RegisterActivity"
             android:exported="true">
         </activity>
         <activity
