@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1034979603637",
+    "project_id": "carrot-game-4cea2",
+    "storage_bucket": "carrot-game-4cea2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034979603637:android:d436780a65a56e4d4abafc",
+        "android_client_info": {
+          "package_name": "com.example.interaction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034979603637-h0i2l6lno9ke878dtd05ijaiofgn22bo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATvgIIAu_WPHt4mIEQC9egxq7os2NEP5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034979603637-h0i2l6lno9ke878dtd05ijaiofgn22bo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

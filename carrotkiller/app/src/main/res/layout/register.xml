@@ -89,6 +89,7 @@
         android:layout_marginTop="10sp"
         android:layout_marginEnd="10sp"
         android:layout_marginBottom="10sp"
+        android:autofillHints="password"
         android:background="@color/light_orange"
         android:drawableStart="@drawable/ic_baseline_vpn_key_24"
         android:drawablePadding="20sp"
@@ -97,8 +98,7 @@
         android:padding="20sp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        tools:ignore="TextContrastCheck"
-        android:autofillHints="password" />
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/sign_in_button"
@@ -116,17 +116,18 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/backMenu"
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/sign_in_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="60sp"
         android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:text="@string/back_to_game"
+        android:text="@string/log_in"
         android:textColor="@color/black"
-        android:textSize="15sp"
-        tools:ignore="TextContrastCheck" />
+        android:textStyle="bold" />
 
 </RelativeLayout>
