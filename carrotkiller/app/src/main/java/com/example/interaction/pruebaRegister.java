@@ -3,8 +3,6 @@ package com.example.interaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,45 +16,42 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-import org.w3c.dom.Text;
+public class pruebaRegister extends AppCompatActivity {
 
-public class LoginActivity extends AppCompatActivity {
-
-    private Button loginButton;
     private Button registerButton;
-    private EditText emailView;
-    private EditText passwordView;
+    private Button loginButton;
     private FirebaseAuth mAuth;
+    private TextView emailView;
+    private TextView passwordView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.register);
 
+        registerButton = findViewById(R.id.sign_in_button);
         loginButton = findViewById(R.id.login_button);
-        registerButton = findViewById(R.id.register_button);
+        mAuth = FirebaseAuth.getInstance();
         emailView = findViewById(R.id.email);
         passwordView = findViewById(R.id.password);
-        mAuth = FirebaseAuth.getInstance();
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                loginUser();
-            }
-        });
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, pruebaRegister.class));
+                createUser();
+            }
+        });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(pruebaRegister.this, LoginActivity.class));
             }
         });
     }
 
-    private void loginUser() {
+    private void createUser() {
         String email = emailView.getText().toString();
         String password = passwordView.getText().toString();
 
@@ -67,18 +62,15 @@ public class LoginActivity extends AppCompatActivity {
             passwordView.setError("Password cannot be empty");
             passwordView.requestFocus();
         } else {
-            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()) {
-                        Toast.makeText(LoginActivity.this, "SUCESSFULLY LOGGED", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LoginActivity.this, pruebaMain.class));
+                        Toast.makeText(pruebaRegister.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(pruebaRegister.this, LoginActivity.class));
                     } else {
-                        //fail
-                        Toast.makeText(LoginActivity.this, "THE USERNAME/PASSWORD IS NOT CORRECT", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(LoginActivity.this, "Login error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(pruebaRegister.this, "Registration error: ", Toast.LENGTH_SHORT).show(); //task.getException().getMessage()
                     }
-
                 }
             });
         }

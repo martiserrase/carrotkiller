@@ -22,7 +22,6 @@ public class RegisterActivity extends AppCompatActivity {
         TextView repeat_password = (TextView) findViewById(R.id.repeat_password);
 
         Button signIn_button = (Button) findViewById(R.id.sign_in_button);
-        Button backMenu_button = (Button) findViewById(R.id.backMenu);
 
         signIn_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,13 +36,6 @@ public class RegisterActivity extends AppCompatActivity {
                     //fail
                     Toast.makeText(RegisterActivity.this, "THE PASSWORD DOESN'T MATCH", Toast.LENGTH_SHORT).show();
                 }
-            }
-        });
-
-        backMenu_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(RegisterActivity.this, "Iría a la ventana de MENU", Toast.LENGTH_SHORT).show();
             }
         });
     }
