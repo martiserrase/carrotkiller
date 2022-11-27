@@ -2,7 +2,6 @@ package com.example.interaction;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -10,14 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.TimePicker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.w3c.dom.Text;
-
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class NewGameActivity extends AppCompatActivity {
@@ -28,37 +23,10 @@ public class NewGameActivity extends AppCompatActivity {
     EditText final_date;
     EditText final_time;
 
-    private Button btnpickdate;
-    private TextView selectdate;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_game);
-
-//        btnpickdate=findViewById(R.id.btnpickdate);
-//        selectdate=findViewById(R.id.selectdate);
-//
-//        btnpickdate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                final Calendar calendar = Calendar.getInstance();
-//                int year = calendar.get(Calendar.YEAR);
-//                int month = calendar.get(Calendar.MONTH);
-//                int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
-//
-//                DatePickerDialog datePickerDialog = new DatePickerDialog(
-//                        NewGameActivity.this,
-//                        new DatePickerDialog.OnDateSetListener(){
-//                            @Override
-//                            public  void onDateSet(DatePicker view, int year, int month, int dayOfMonth){
-//                                selectdate.setText(dayOfMonth + "/" + month + "/" + year);
-//                            }
-//                        },
-//                year, month, dayOfMonth);
-//                datePickerDialog.show();
-//            }
-//        });
 
         Button cancel_button = findViewById(R.id.cancel_button);
         Button submit_button = findViewById(R.id.submit_button);
