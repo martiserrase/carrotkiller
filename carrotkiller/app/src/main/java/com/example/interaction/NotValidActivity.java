@@ -21,9 +21,8 @@ public class NotValidActivity extends AppCompatActivity {
         backMenu_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(NotValidActivity.this, "Iría a la ventana de MENU", Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(ProfileActivity.this, LoginActivity.class); // tendria que ir al menu
-                //startActivity(intent);
+                Intent intent = new Intent(NotValidActivity.this, MenuActivity.class);
+                startActivity(intent);
             }
         });
 
