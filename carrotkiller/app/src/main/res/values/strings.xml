@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Interaction</string>
+    <string name="app_name">Carrot Killer</string>
     <string name="button">Button</string>
     <string name="imagen">Image</string>
     <string name="have_you_been_murdered">Have you been murdered?</string>
@@ -107,4 +107,10 @@
     <string name="change_profile_photo">Change profile photo</string>
     <string name="save">Save</string>
     <string name="cancel_change_profile">Cancel</string>
+    <string name="select_initial_date_and_time">SELECT INITIAL DATE AND TIME</string>
+    <string name="select_final_date_and_time">SELECT FINAL DATE AND TIME</string>
+    <string name="select_initial_date">SELECT INITIAL DATE</string>
+    <string name="select_final_date">SELECT FINAL DATE</string>
+    <string name="select_initial_time">SELECT INITIAL TIME</string>
+    <string name="select_final_time">SELECT FINAL TIME</string>
 </resources>
