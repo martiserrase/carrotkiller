@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,10 +26,13 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
 
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference().child("profiles").child("1");
+
         Button backMenu_button = findViewById(R.id.backMenu);
         Button change_button = findViewById(R.id.change);
 
-        /*
+
         TextView name = findViewById(R.id.name);
         TextView surname = findViewById(R.id.surname);
         TextView addInfo = findViewById(R.id.additional_info);
@@ -50,7 +54,7 @@ public class ProfileActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });*/
+        });
 
         backMenu_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +73,4 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
     }
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference().child("profile");
 }

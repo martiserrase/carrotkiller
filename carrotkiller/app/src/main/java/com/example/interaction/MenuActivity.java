@@ -82,9 +82,9 @@ public class MenuActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser == null) {
+        /*if(currentUser == null) {
             Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
             startActivity(intent);
-        }
+        }*/
     }
 }

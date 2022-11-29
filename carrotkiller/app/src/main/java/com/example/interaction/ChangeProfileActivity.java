@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,7 +23,7 @@ import java.util.HashMap;
 
 public class ChangeProfileActivity extends AppCompatActivity {
 
-    DatabaseReference ref;
+    DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
     Button photo_button, cancel_button, save_button;
     EditText nameT, surnameT, addinfoT;
 
@@ -38,7 +39,6 @@ public class ChangeProfileActivity extends AppCompatActivity {
         surnameT = findViewById(R.id.surname);
         addinfoT = findViewById(R.id.additional_info);
 
-        ref = FirebaseDatabase.getInstance().getReference();
 
         photo_button.setOnClickListener(view -> Toast.makeText(ChangeProfileActivity.this, "Saltaría una pestaña para seleccionar foto??", Toast.LENGTH_SHORT).show());
 
@@ -57,13 +57,12 @@ public class ChangeProfileActivity extends AppCompatActivity {
                 String addInfoS = addinfoT.getText().toString();
 
                 Profiles profiles = new Profiles(nameS, surnameS, addInfoS);
-                //HashMap<String, String> userMap = new HashMap<>();
-                //userMap.put("name", nameS);
-                //userMap.put("surname", surnameS);
-                //userMap.put("additionalInfo", addInfoS);
-                //ref.push().setValue(userMap);
-
-                ref.child("2").push().setValue(profiles);
+                /*HashMap<String, String> userMap = new HashMap<>();
+                userMap.put("name", nameS);
+                userMap.put("surname", surnameS);
+                userMap.put("additionalInfo", addInfoS);*/
+                ref.child(FirebaseAuth.getInstance().getUid()).setValue(profiles);
+                Toast.makeText(ChangeProfileActivity.this, "added!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(ChangeProfileActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
