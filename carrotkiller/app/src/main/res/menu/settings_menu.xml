@@ -3,25 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/item1"
+        android:id="@+id/share"
         android:icon="@drawable/ic_share_icon"
-        android:title="Item 1"
+        android:title="Share"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/item2"
-        android:title="Item 2"
+        android:id="@+id/quit_game"
+        android:title="Quit game"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/item3"
-        android:title="Item 3"
+        android:id="@+id/log_out"
+        android:title="Log out"
         app:showAsAction="never" >
         <menu>
-            <item android:id="@+id/subitem1"
-                android:title="Subitem 1"/>
-            <item android:id="@+id/subitem2"
-                android:title="Subitem 2"/>
+            <item android:id="@+id/confirm_log_out"
+                android:title="Confirm"/>
+
 
         </menu>
     </item>

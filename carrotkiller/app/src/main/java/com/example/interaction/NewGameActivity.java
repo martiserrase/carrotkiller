@@ -16,6 +16,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ComponentActivity;
 
 import java.util.Calendar;
 
@@ -146,6 +147,7 @@ public class NewGameActivity extends AppCompatActivity {
         new TimePickerDialog(NewGameActivity.this, timeSetListener, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), false).show();
     }
 
+    // Toolbar menu options
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -156,23 +158,21 @@ public class NewGameActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.item1:
-                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
+            case R.id.share:
+                Toast.makeText(this, "THANKS FOR SHARING!", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item2:
-                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
+            case R.id.quit_game:
+                Toast.makeText(this, "GOODBYE!", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item3:
-                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
+            case R.id.log_out:
+                Toast.makeText(this, "CONFIRM LOG OUT!", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.subitem1:
-                Toast.makeText(this, "SubItem 1 selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.subitem2:
-                Toast.makeText(this, "SubItem 2 selected", Toast.LENGTH_SHORT).show();
+            case R.id.confirm_log_out:
+                Toast.makeText(this, "LOGGED OUT", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }
