@@ -17,13 +17,13 @@ public class NavActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new HomeFragment());
+        replaceFragment(new MenuFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item ->  {
 
             switch (item.getItemId()) {
                 case R.id.home:
-                    replaceFragment(new HomeFragment());
+                    replaceFragment(new MenuFragment());
                     break;
                 case R.id.victim:
                     replaceFragment(new VictimFragment());

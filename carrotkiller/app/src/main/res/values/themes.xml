@@ -3,7 +3,7 @@
 
     <style name="Carrot" parent="android:style/TextAppearance">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/dark_orange</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/orange</item>
         <item name="colorOnPrimary">@color/orange</item>
         <!-- Status bar color. -->
@@ -16,5 +16,7 @@
         <item name="android:textColorHighlight">@color/white</item>
         <item name="android:textColorHint">@color/white</item>
         <item name="android:textColorLink">@color/white</item>
+        <item name="navigationViewStyle">@color/white</item>
     </style>
+
 </resources>
