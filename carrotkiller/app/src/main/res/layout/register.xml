@@ -51,7 +51,7 @@
         android:layout_marginBottom="10sp"
         android:autofillHints="username"
         android:background="@color/light_orange"
-        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableStart="@drawable/person"
         android:drawablePadding="20sp"
         android:hint="@string/username"
         android:inputType="text"

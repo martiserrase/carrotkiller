@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
 
     <style name="Carrot" parent="android:style/TextAppearance">
-    <!-- Primary brand color. -->
+        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/dark_orange</item>
         <item name="colorPrimaryVariant">@color/orange</item>
         <item name="colorOnPrimary">@color/orange</item>
