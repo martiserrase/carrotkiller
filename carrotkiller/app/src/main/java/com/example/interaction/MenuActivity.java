@@ -95,40 +95,40 @@ public class MenuActivity extends AppCompatActivity {
         }
     }
 
-    // Toolbar menu options
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.settings_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.share:
-                Toast.makeText(this, "THANKS FOR SHARING!", Toast.LENGTH_SHORT).show();
-                screenShot(getWindow().getDecorView().getRootView());
-                return true;
-            case R.id.quit_game:
-                Toast.makeText(this, "GOODBYE!", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.log_out:
-                Toast.makeText(this, "CONFIRM LOG OUT!", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.confirm_log_out:
-                Toast.makeText(this, "LOGGED OUT", Toast.LENGTH_SHORT).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-    public Bitmap screenShot(View view) {
-        Bitmap bitmap = Bitmap.createBitmap(view.getWidth(),
-                view.getHeight(), Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(bitmap);
-        view.draw(canvas);
-        return bitmap;
-    }
+//    // Toolbar menu options
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.settings_menu, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.share:
+//                Toast.makeText(this, "THANKS FOR SHARING!", Toast.LENGTH_SHORT).show();
+//                screenShot(getWindow().getDecorView().getRootView());
+//                return true;
+//            case R.id.quit_game:
+//                Toast.makeText(this, "GOODBYE!", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.log_out:
+//                Toast.makeText(this, "CONFIRM LOG OUT!", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.confirm_log_out:
+//                Toast.makeText(this, "LOGGED OUT", Toast.LENGTH_SHORT).show();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
+//
+//    public Bitmap screenShot(View view) {
+//        Bitmap bitmap = Bitmap.createBitmap(view.getWidth(),
+//                view.getHeight(), Bitmap.Config.ARGB_8888);
+//        Canvas canvas = new Canvas(bitmap);
+//        view.draw(canvas);
+//        return bitmap;
+//    }
 }
