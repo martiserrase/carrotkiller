@@ -60,10 +60,10 @@
             android:minHeight="48dp"
             android:paddingStart="20sp"
             android:paddingTop="10sp"
-            android:text="Name"
+            android:text="@string/name"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
 
         <TextView
             android:id="@+id/surname"
@@ -77,10 +77,10 @@
             android:minHeight="48dp"
             android:paddingStart="20sp"
             android:paddingTop="10sp"
-            android:text="Surname"
+            android:text="@string/surname"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
 
         <TextView
             android:id="@+id/additional_info"
@@ -94,10 +94,10 @@
             android:minHeight="48dp"
             android:paddingStart="20sp"
             android:paddingTop="10sp"
-            android:text="Additional info"
+            android:text="@string/additional_info"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
 
         <Button
             android:id="@+id/change"
@@ -115,7 +115,7 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/backMenu"
+            android:id="@+id/backGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

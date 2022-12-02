@@ -66,22 +66,16 @@ public class VictimFragment extends Fragment {
         View view = inflater.inflate(R.layout.victimsprofile, container, false);
 
         kill_button = view.findViewById(R.id.kill);
-        kill_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), KillVictimActivity.class);
-                startActivity(intent);
-            }
+        kill_button.setOnClickListener(view1 -> {
+            Intent intent = new Intent(getActivity(), KillVictimActivity.class);
+            startActivity(intent);
         });
 
-        back_button = view.findViewById(R.id.backMenu);
+        back_button = view.findViewById(R.id.backGame);
 
-        back_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), StartedGameActivity.class);
-                startActivity(intent);
-            }
+        back_button.setOnClickListener(view12 -> {
+            Intent intent = new Intent(getActivity(), StartedGameActivity.class);
+            startActivity(intent);
         });
 
         return view;

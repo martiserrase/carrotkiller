@@ -119,4 +119,6 @@
     <string name="victim_fragment">Victim fragment</string>
     <string name="menu_fragment">Menu fragment</string>
     <string name="log_out">Log out</string>
+    <string name="additional_info">Additional info</string>
+    <string name="surname">Surname</string>
 </resources>
