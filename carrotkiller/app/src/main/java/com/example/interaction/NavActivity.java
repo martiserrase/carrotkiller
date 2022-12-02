@@ -22,7 +22,7 @@ public class NavActivity extends AppCompatActivity {
         binding.bottomNavigationView.setOnItemSelectedListener(item ->  {
 
             switch (item.getItemId()) {
-                case R.id.home:
+                case R.id.menu:
                     replaceFragment(new MenuFragment());
                     break;
                 case R.id.victim:

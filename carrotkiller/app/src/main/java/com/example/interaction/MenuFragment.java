@@ -1,5 +1,6 @@
 package com.example.interaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +24,12 @@ public class MenuFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    Button myProfile_button;
+    Button newGame_button;
+    Button joinGame_button;
+    Button continueGame_button;
+    Button logout_button;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -58,7 +69,63 @@ public class MenuFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_menu, container, false);
+        View view = inflater.inflate(R.layout.activity_menu, container, false);
+
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+        myProfile_button = view.findViewById(R.id.my_profile_button);
+        newGame_button = view.findViewById(R.id.new_game_button);
+        joinGame_button = view.findViewById(R.id.join_game_button);
+        continueGame_button = view.findViewById(R.id.continue_game_button);
+        logout_button = view.findViewById(R.id.log_out_button);
+
+        newGame_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), NewGameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        joinGame_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), JoinGameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        continueGame_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), StartedGameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myProfile_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+            }
+        });
+        /*public void goToAttract(View v)
+{
+    Intent intent = new Intent(getActivity(), MainActivityList.class);
+    startActivity(intent);
+}*/
+
+        // Inflate the layout for this fragment
+        return view;
     }
 }

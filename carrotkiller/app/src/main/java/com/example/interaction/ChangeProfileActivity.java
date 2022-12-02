@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -23,7 +25,8 @@ import java.util.HashMap;
 
 public class ChangeProfileActivity extends AppCompatActivity {
 
-    DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+    FirebaseAuth auth;
+    DatabaseReference ref;
     Button photo_button, cancel_button, save_button;
     EditText nameT, surnameT, addinfoT;
 
@@ -32,6 +35,8 @@ public class ChangeProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.changeprofile);
 
+        auth = FirebaseAuth.getInstance();
+        ref = FirebaseDatabase.getInstance("https://carrot-game-4cea2-default-rtdb.europe-west1.firebasedatabase.app/").getReference();
         photo_button = findViewById(R.id.change_photo);
         cancel_button = findViewById(R.id.cancel_button);
         save_button = findViewById(R.id.save_button);
@@ -39,6 +44,7 @@ public class ChangeProfileActivity extends AppCompatActivity {
         surnameT = findViewById(R.id.surname);
         addinfoT = findViewById(R.id.additional_info);
 
+        String id = auth.getUid();
 
         photo_button.setOnClickListener(view -> Toast.makeText(ChangeProfileActivity.this, "Saltaría una pestaña para seleccionar foto??", Toast.LENGTH_SHORT).show());
 
@@ -55,14 +61,16 @@ public class ChangeProfileActivity extends AppCompatActivity {
                 String nameS = nameT.getText().toString();
                 String surnameS = surnameT.getText().toString();
                 String addInfoS = addinfoT.getText().toString();
-
-                Profiles profiles = new Profiles(nameS, surnameS, addInfoS);
-                /*HashMap<String, String> userMap = new HashMap<>();
+/*
+                HashMap<String, String> userMap = new HashMap<>();
                 userMap.put("name", nameS);
                 userMap.put("surname", surnameS);
                 userMap.put("additionalInfo", addInfoS);*/
-                ref.child(FirebaseAuth.getInstance().getUid()).setValue(profiles);
-                Toast.makeText(ChangeProfileActivity.this, "added!", Toast.LENGTH_SHORT).show();
+                ref.child("profiles").child(id).push().setValue(new Profiles(nameS, surnameS, addInfoS)).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                    }
+                });
                 Intent intent = new Intent(ChangeProfileActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
