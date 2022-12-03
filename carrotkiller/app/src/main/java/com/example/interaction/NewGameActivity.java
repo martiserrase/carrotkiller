@@ -42,12 +42,7 @@ public class NewGameActivity extends AppCompatActivity {
         final_time.setInputType(InputType.TYPE_NULL);
 
 
-        initial_date.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showInitialDateDialog(initial_date);
-            }
-        });
+        initial_date.setOnClickListener(view -> showInitialDateDialog(initial_date));
 
         initial_time.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,48 +51,29 @@ public class NewGameActivity extends AppCompatActivity {
             }
         });
 
-        final_date.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showFinalDateDialog(final_date);
-            }
+        final_date.setOnClickListener(view -> showFinalDateDialog(final_date));
+
+        final_time.setOnClickListener(view -> showFinalTimeDialog(final_time));
+
+        cancel_button.setOnClickListener(view -> {
+            Intent intent = new Intent(NewGameActivity.this, NavActivity.class);
+            startActivity(intent);
         });
 
-        final_time.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showFinalTimeDialog(final_time);
-            }
-        });
+        submit_button.setOnClickListener(view -> {
+            Intent intent = new Intent(NewGameActivity.this, NavActivity.class);
+            startActivity(intent);
 
-        cancel_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(NewGameActivity.this, MenuActivity.class);
-                startActivity(intent);
-            }
         });
-
-//        submit_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(NewGameActivity.this, MenuActivity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
     }
 
     private void showInitialDateDialog(EditText initial_date) {
         final Calendar calendar = Calendar.getInstance();
-        DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                calendar.set(Calendar.YEAR, year);
-                calendar.set(Calendar.MONTH, month);
-                calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                initial_date.setText(dayOfMonth + "/" + month + "/" + year);
-            }
+        DatePickerDialog.OnDateSetListener dateSetListener = (view, year, month, dayOfMonth) -> {
+            calendar.set(Calendar.YEAR, year);
+            calendar.set(Calendar.MONTH, month);
+            calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+            initial_date.setText(dayOfMonth + "/" + month + "/" + year);
         };
         new DatePickerDialog(NewGameActivity.this, dateSetListener,
                 calendar.get(Calendar.YEAR),

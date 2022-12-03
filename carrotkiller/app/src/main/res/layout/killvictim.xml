@@ -32,6 +32,8 @@
         android:textSize="35sp"
         tools:ignore="LabelFor" />
 
+
+    <!--
     <Button
         android:id="@+id/backProfile"
         android:layout_width="wrap_content"
@@ -45,9 +47,10 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         tools:ignore="TextContrastCheck" />
+        -->
 
     <Button
-        android:id="@+id/backMenu"
+        android:id="@+id/backGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

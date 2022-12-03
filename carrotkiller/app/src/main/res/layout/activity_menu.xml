@@ -85,7 +85,7 @@
         android:background="@color/white"
         android:paddingStart="10sp"
         android:paddingEnd="10sp"
-        android:text="Log out"
+        android:text="@string/log_out"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
