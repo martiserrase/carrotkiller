@@ -114,4 +114,8 @@
     <string name="select_initial_time">SELECT INITIAL TIME</string>
     <string name="select_final_time">SELECT FINAL TIME</string>
     <string name="date">Date</string>
+    <string name="share_button">share_button</string>
+    <string name="chuck_norris_facts">Chuck Norris facts</string>
+    <string name="log_out">Log out</string>
+    <string name="confirm">Confirm</string>
 </resources>

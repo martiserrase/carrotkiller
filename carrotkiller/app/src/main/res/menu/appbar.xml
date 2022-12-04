@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_icon"
+        android:title="@string/share_button"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/chuck_norris_item"
+        android:title="@string/chuck_norris_facts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/log_out"
+        android:title="@string/log_out"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/confirm_log_out"
+                android:title="@string/confirm" />
+        </menu>
+    </item>
+</menu>
