@@ -65,6 +65,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 //createChuckNorrisFact();
                 Toast.makeText(this, "CHUCK NORRIS FACT NOT WORKING", Toast.LENGTH_LONG).show();
                 return true;
+
             case R.id.log_out_icon:
                 Toast.makeText(this, "CONFIRM LOG OUT!", Toast.LENGTH_SHORT).show();
                 return true;

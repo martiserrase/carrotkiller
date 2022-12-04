@@ -82,9 +82,10 @@
         android:layout_below="@+id/login_button"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:text="@string/forgot_password"
+        android:text="@string/create_an_account"
         android:textColor="@color/white"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        tools:text="Create an account" />
 
     <Button
         android:id="@+id/register_button"

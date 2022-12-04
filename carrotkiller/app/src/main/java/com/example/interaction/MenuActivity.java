@@ -2,6 +2,7 @@ package com.example.interaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -72,8 +73,7 @@ public class MenuActivity extends AppCompatActivity {
         logout_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MenuActivity.this, "SI", Toast.LENGTH_SHORT).show();
-               FirebaseAuth.getInstance().signOut();
+                Toast.makeText(MenuActivity.this, "LOGGING OUT", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -82,7 +82,7 @@ public class MenuActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser == null) {
+        if (currentUser == null) {
             Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
             startActivity(intent);
         }

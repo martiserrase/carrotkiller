@@ -116,9 +116,13 @@ public class MenuFragment extends Fragment {
         logout_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(), "LOGGING OUT", Toast.LENGTH_LONG).show();
                 FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
             }
         });
+
         /*public void goToAttract(View v)
 {
     Intent intent = new Intent(getActivity(), MainActivityList.class);
@@ -128,4 +132,6 @@ public class MenuFragment extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
+
+
 }

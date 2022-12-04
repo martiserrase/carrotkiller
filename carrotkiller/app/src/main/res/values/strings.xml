@@ -21,7 +21,6 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="forgot_password">Forgot password</string>
     <string name="register">Register</string>
     <string name="code_number">XXXX</string>
     <string name="email">Email</string>
@@ -125,4 +124,5 @@
     <string name="additional_info">Additional info</string>
     <string name="surname">Surname</string>
     <string name="log_out_icon">Log out</string>
+    <string name="create_an_account">Create an account</string>
 </resources>
