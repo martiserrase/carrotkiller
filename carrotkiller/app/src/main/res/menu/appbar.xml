@@ -14,8 +14,8 @@
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/log_out"
-        android:title="@string/log_out"
+        android:id="@+id/log_out_icon"
+        android:title="@string/log_out_icon"
         app:showAsAction="never">
         <menu>
             <item
