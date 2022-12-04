@@ -11,17 +11,17 @@
         android:id="@+id/go_to_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:text="@string/go_to_menu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:iconTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:backgroundTint="@color/white"/>
+        app:layout_constraintVertical_bias="0.935" />
 
     <TextView
         android:id="@+id/game_name"

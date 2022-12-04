@@ -118,7 +118,7 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/backMenu"
+            android:id="@+id/backGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

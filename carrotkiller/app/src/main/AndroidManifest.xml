@@ -15,8 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
-        <activity
+        <!--<activity
             android:name=".MenuActivity"
+            android:exported="true">
+        </activity>-->
+        <activity
+            android:name=".NavActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,10 +50,6 @@
         <activity
             android:name=".NewGameActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".JoinGameActivity"
@@ -79,10 +79,10 @@
             android:name=".KillVictimActivity"
             android:exported="true">
         </activity>
-        <activity
+        <!--<activity
             android:name=".VictimProfileActivity"
             android:exported="true">
-        </activity>
+        </activity>-->
         <activity
             android:name=".DeadActivity"
             android:exported="true">

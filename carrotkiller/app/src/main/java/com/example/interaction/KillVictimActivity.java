@@ -2,10 +2,7 @@ package com.example.interaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,23 +13,17 @@ public class KillVictimActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.killvictim);
 
-        Button backMenu_button = findViewById(R.id.backMenu);
-        Button backProfile_button = findViewById(R.id.backProfile);
+        Button backMenu_button = findViewById(R.id.backGame);
+        /*Button backProfile_button = findViewById(R.id.backProfile);
 
-        backProfile_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(KillVictimActivity.this, VictimProfileActivity.class);
-                startActivity(intent);
-            }
-        });
+        backProfile_button.setOnClickListener(view -> {
+            Intent intent = new Intent(KillVictimActivity.this, NavActivity.class);
+            startActivity(intent);
+        });*/
 
-        backMenu_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(KillVictimActivity.this, MenuActivity.class);
-                startActivity(intent);
-            }
+        backMenu_button.setOnClickListener(view -> {
+            Intent intent = new Intent(KillVictimActivity.this, NavActivity.class);
+            startActivity(intent);
         });
     }
 }

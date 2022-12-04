@@ -57,13 +57,13 @@
             android:layout_marginEnd="30sp"
             android:layout_marginBottom="20sp"
             android:background="@color/light_orange"
+            android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="20sp"
             android:paddingTop="10sp"
-            android:text="Name"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
 
         <EditText
             android:id="@+id/surname"
@@ -74,13 +74,13 @@
             android:layout_marginEnd="30sp"
             android:layout_marginBottom="20sp"
             android:background="@color/light_orange"
+            android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="20sp"
             android:paddingTop="10sp"
-            android:text="Surname"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
 
         <EditText
             android:id="@+id/additional_info"
@@ -94,10 +94,10 @@
             android:minHeight="48dp"
             android:paddingStart="20sp"
             android:paddingTop="10sp"
-            android:text="Additional info"
+            android:inputType="text"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
 
         <LinearLayout
             android:layout_width="match_parent"

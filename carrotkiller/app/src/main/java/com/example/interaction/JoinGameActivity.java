@@ -17,20 +17,14 @@ public class JoinGameActivity extends AppCompatActivity {
         Button cancel_button = findViewById(R.id.cancel_button);
         Button submit_button = findViewById(R.id.submit_button);
 
-        cancel_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(JoinGameActivity.this, MenuActivity.class);
-                startActivity(intent);
-            }
+        cancel_button.setOnClickListener(view -> {
+            Intent intent = new Intent(JoinGameActivity.this, NavActivity.class);
+            startActivity(intent);
         });
 
-//        submit_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(JoinGameActivity.this, MenuActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        submit_button.setOnClickListener(view -> {
+            Intent intent = new Intent(JoinGameActivity.this, NavActivity.class);
+            startActivity(intent);
+        });
     }
 }
