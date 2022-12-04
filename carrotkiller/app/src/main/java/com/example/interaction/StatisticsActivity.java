@@ -78,6 +78,7 @@ public class StatisticsActivity extends AppCompatActivity {
     }
 
     //function to get the chuck norris fact from the api
+    // inspired from the youtube video https://youtu.be/4JGvDUlfk7Y
     private void createChuckNorrisFact() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.chucknorris.io/")
@@ -95,7 +96,9 @@ public class StatisticsActivity extends AppCompatActivity {
                     return;
                 }
                 ChuckNorris randomFact = response.body();
-                chuckNorrisTextView.setText(randomFact.getValue());
+                if (randomFact != null) {
+                    chuckNorrisTextView.setText(randomFact.getValue());
+                }
             }
 
             @Override

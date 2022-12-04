@@ -10,6 +10,8 @@ package com.example.interaction.api;
     "value": "S
  */
 
+// Code with the API call in the StatisticsActivity.java
+
 public class ChuckNorris {
 
     private String[] categories;
