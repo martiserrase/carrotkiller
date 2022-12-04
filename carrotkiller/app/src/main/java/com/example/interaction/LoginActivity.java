@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "SUCESSFULLY LOGGED", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LoginActivity.this, MenuFragment.class));
+                        startActivity(new Intent(LoginActivity.this, NavActivity.class));
                     } else {
                         Toast.makeText(LoginActivity.this, "THE USERNAME/PASSWORD IS NOT CORRECT", Toast.LENGTH_SHORT).show();
                     }
